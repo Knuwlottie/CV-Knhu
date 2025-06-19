@@ -248,27 +248,38 @@
         <ion-icon name="mail-outline"></ion-icon>
         <h3>LIÊN HỆ</h3>
       </div>
-      <div class="cv-section-content" style="display: flex; gap: 32px; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
-        <!-- Khung thông tin liên hệ -->
-        <div class="contact-info-box" style="flex: 1 1 340px; min-width: 300px; max-width: 420px; background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); border-radius: 16px; padding: 36px 32px; margin-bottom: 0; box-shadow: 0 2px 16px rgba(0,0,0,0.10); display: flex; flex-direction: column; align-items: center; justify-content: center;">
-          <h2 style="color: #fff; font-size: 2rem; font-weight: bold; margin-bottom: 18px; text-align: center;">Tìm tôi ↘</h2>
-          <div style="color: #fff; font-size: 1.1rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;"><ion-icon name="mail-outline"></ion-icon> Email: <span style="font-weight: 500;">huynhlekhanhu.kg@gmail.com</span></div>
-          <div style="color: #fff; font-size: 1.1rem; margin-bottom: 24px; display: flex; align-items: center; gap: 8px;"><ion-icon name="call-outline"></ion-icon> Số điện thoại: <span style="font-weight: 500;">+84 386717549</span></div>
-          <div style="display: flex; gap: 24px; margin-top: 12px;">
-            <a href="https://github.com/Knuwlottie" target="_blank" style="color: #fff; border: 2px solid #fff; border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><ion-icon name="logo-github"></ion-icon></a>
-            <a href="https://www.facebook.com/share/16AXtoAvif/?mibextid=wwXIfr" target="_blank" style="color: #fff; border: 2px solid #fff; border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="https://www.instagram.com/knuwlottie/" target="_blank" style="color: #fff; border: 2px solid #fff; border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;"><ion-icon name="logo-instagram"></ion-icon></a>
+      <div class="cv-section-content contact-flex-container">
+        <!-- Left: Contact Info -->
+        <div class="contact-info-panel">
+          <h2><ion-icon name="mail-outline"></ion-icon> LIÊN HỆ</h2>
+          <p>Bạn có thể liên hệ với tôi qua thông tin dưới đây:</p>
+          <div class="contact-detail"><ion-icon name="mail-outline"></ion-icon> <b>Email:</b><br><span>huynhlekhanhu.kg@gmail.com</span></div>
+          <div class="contact-detail"><ion-icon name="call-outline"></ion-icon> <b>Điện thoại:</b><br><span>+84 386717549</span></div>
+          <div class="contact-socials">
+            <a href="https://github.com/Knuwlottie" target="_blank" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.facebook.com/share/16AXtoAvif/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.instagram.com/knuwlottie/" target="_blank" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
           </div>
         </div>
-        <!-- Form liên hệ -->
-        <form class="contact-form-box" style="flex: 2 1 400px; min-width: 320px; max-width: 700px; background: transparent; border-radius: 16px; padding: 16px 0 0 0; display: flex; flex-direction: column; gap: 18px; align-items: stretch; justify-content: flex-start;">
-          <div style="display: flex; gap: 16px;">
-            <input type="text" placeholder="Tên" name="name" style="flex: 1; padding: 14px 12px; border: 2px solid #bdbdbd; border-radius: 8px; font-size: 1rem; outline: none;">
-            <input type="email" placeholder="Email" name="email" style="flex: 1; padding: 14px 12px; border: 2px solid #bdbdbd; border-radius: 8px; font-size: 1rem; outline: none; max-width: 180px;">
-          </div>
-          <textarea placeholder="Tin nhắn" name="message" rows="6" style="padding: 14px 12px; border: 2px solid #bdbdbd; border-radius: 8px; font-size: 1rem; outline: none; resize: vertical;"></textarea>
-          <button type="submit" style="align-self: flex-end; background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); color: #fff; border: none; border-radius: 10px; padding: 12px 32px; font-size: 1.1rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: background 0.2s;">Gửi <ion-icon name="send-outline"></ion-icon></button>
-        </form>
+        <!-- Right: Contact Form -->
+        <div class="contact-form-panel">
+          <h2>Gửi tin nhắn</h2>
+          <form class="contact-form-modern">
+            <div class="input-group">
+              <label for="contact-name">Tên của bạn</label>
+              <input type="text" id="contact-name" name="name" placeholder="Tên của bạn" required>
+            </div>
+            <div class="input-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+              <label for="contact-message">Nội dung tin nhắn</label>
+              <textarea id="contact-message" name="message" placeholder="Nội dung tin nhắn" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="send-btn">Gửi</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
