@@ -101,80 +101,140 @@
         </div>
       </div>
     </div>
-    <!-- Skills -->
-    <div class="cv-section" id="skills-section">
-      <div class="cv-section-header">
-        <ion-icon name="star-outline"></ion-icon>
-        <h3>KỸ NĂNG</h3>
+    <!-- Skills & Programming Languages (side by side) -->
+    <div class="cv-section" id="skills-languages-section" style="display: flex; gap: 32px; flex-wrap: wrap; justify-content: center;">
+      <!-- Programming Languages -->
+      <div style="flex: 1 1 320px; min-width: 260px; max-width: 400px;">
+        <div class="cv-section-header">
+          <ion-icon name="code-slash-outline"></ion-icon>
+          <h3>NGÔN NGỮ LẬP TRÌNH</h3>
+        </div>
+        <div class="cv-section-content">
+          <div class="skill">
+            <div class="skill-name">HTML5</div>
+            <div class="skill-bar-container" role="progressbar" aria-label="HTML5 90 phần trăm" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar" data-width="90%" style="background: #e44d26;"></div>
+            </div>
+            <div class="skill-percent">90%</div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">CSS3</div>
+            <div class="skill-bar-container" role="progressbar" aria-label="CSS3 85 phần trăm" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar" data-width="85%" style="background: #1572b6;"></div>
+            </div>
+            <div class="skill-percent">85%</div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar-container" role="progressbar" aria-label="JavaScript 80 phần trăm" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar" data-width="80%" style="background: #f7df1e;"></div>
+            </div>
+            <div class="skill-percent">80%</div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">Java</div>
+            <div class="skill-bar-container" role="progressbar" aria-label="Java 70 phần trăm" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar" data-width="70%" style="background: #5382a1;"></div>
+            </div>
+            <div class="skill-percent">70%</div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">C/C++</div>
+            <div class="skill-bar-container" role="progressbar" aria-label="C/C++ 65 phần trăm" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar" data-width="65%" style="background: #4e5d94;"></div>
+            </div>
+            <div class="skill-percent">65%</div>
+          </div>
+        </div>
       </div>
-      <div class="cv-section-content">
-        <div class="skill">
-          <div class="skill-name">Phát Triển Giao Diện Web</div>
-          <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng phát triển giao diện web 75 phần trăm" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-bar" data-width="75%"></div>
-          </div>
-          <div class="skill-percent">75%</div>
+      <!-- Skills -->
+      <div style="flex: 1 1 320px; min-width: 260px; max-width: 400px;">
+        <div class="cv-section-header">
+          <ion-icon name="star-outline"></ion-icon>
+          <h3>KỸ NĂNG</h3>
         </div>
-        <div class="skill">
-          <div class="skill-name">Phát Triển Phần Mềm</div>
-          <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng phát triển phần mềm 70 phần trăm" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-bar" data-width="70%"></div>
+        <div class="cv-section-content">
+          <div class="skill">
+            <div class="skill-name">Phát Triển Giao Diện Web</div>
+            <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng phát triển giao diện web 75 phần trăm" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar" data-width="75%"></div>
+            </div>
+            <div class="skill-percent">75%</div>
           </div>
-          <div class="skill-percent">70%</div>
-        </div>
-        <div class="skill">
-          <div class="skill-name">UI/UX</div>
-          <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng UI/UX 75 phần trăm" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-bar" data-width="75%"></div>
+          <div class="skill">
+            <div class="skill-name">Phát Triển Phần Mềm</div>
+            <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng phát triển phần mềm 70 phần trăm" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar" data-width="70%"></div>
+            </div>
+            <div class="skill-percent">70%</div>
           </div>
-          <div class="skill-percent">75%</div>
-        </div>
-        <div class="skill">
-          <div class="skill-name">Tư Duy Thiết Kế</div>
-          <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng tư duy thiết kế 80 phần trăm" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-bar" data-width="80%"></div>
+          <div class="skill">
+            <div class="skill-name">UI/UX</div>
+            <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng UI/UX 75 phần trăm" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar" data-width="75%"></div>
+            </div>
+            <div class="skill-percent">75%</div>
           </div>
-          <div class="skill-percent">80%</div>
-        </div>
-        <div class="skill">
-          <div class="skill-name">Giao Tiếp Tự Tin & Sáng Tạo</div>
-          <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng giao tiếp tự tin và sáng tạo 85 phần trăm" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-bar" data-width="85%"></div>
+          <div class="skill">
+            <div class="skill-name">Tư Duy Thiết Kế</div>
+            <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng tư duy thiết kế 80 phần trăm" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar" data-width="80%"></div>
+            </div>
+            <div class="skill-percent">80%</div>
           </div>
-          <div class="skill-percent">85%</div>
+          <div class="skill">
+            <div class="skill-name">Giao Tiếp Tự Tin & Sáng Tạo</div>
+            <div class="skill-bar-container" role="progressbar" aria-label="Kỹ năng giao tiếp tự tin và sáng tạo 85 phần trăm" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar" data-width="85%"></div>
+            </div>
+            <div class="skill-percent">85%</div>
+          </div>
         </div>
       </div>
     </div>
-    
-  <!-- Khung tiêu đề SỞ THÍCH -->
-<div class="cv-section hobby-title-section" id="services">
-  <div class="cv-section-header">
-    <ion-icon name="heart-outline"></ion-icon>
-    <h3>SỞ THÍCH</h3>
-  </div>
-</div>
-<div class="hobbies-row-separated">
-  <div class="hobby-box-separated">
-    <span class="hobby-icon hobby-music hobby-icon-glow"><ion-icon name="musical-notes-outline"></ion-icon></span>
-    <div class="hobby-title">Âm nhạc</div>
-  </div>
-  <div class="hobby-box-separated">
-    <span class="hobby-icon hobby-book hobby-icon-glow"><ion-icon name="book-outline"></ion-icon></span>
-    <div class="hobby-title">Đọc sách</div>
-  </div>
-  <div class="hobby-box-separated">
-    <span class="hobby-icon hobby-travel hobby-icon-glow"><ion-icon name="globe-outline"></ion-icon></span>
-    <div class="hobby-title">Du lịch</div>
-  </div>
-  <div class="hobby-box-separated">
-    <span class="hobby-icon hobby-art hobby-icon-glow"><ion-icon name="color-palette-outline"></ion-icon></span>
-    <div class="hobby-title">Vẽ</div>
-  </div>
-  <div class="hobby-box-separated">
-    <span class="hobby-icon hobby-design hobby-icon-glow"><ion-icon name="build-outline"></ion-icon></span>
-    <div class="hobby-title">Thiết kế</div>
-  </div>
-</div>
+    <!-- Career Objective -->
+    <div class="cv-section" id="career-objective-section">
+      <div class="cv-section-header">
+        <ion-icon name="trending-up-outline"></ion-icon>
+        <h3>MỤC TIÊU NGHỀ NGHIỆP</h3>
+      </div>
+      <div class="cv-section-content">
+        <p style="font-size:1.13em; line-height:1.7;">
+          <strong><ion-icon name="rocket-outline" style="font-size:1.1em;vertical-align:-2px;"></ion-icon> Định hướng:</strong> Trở thành <span style="color:#3b82f6;font-weight:600;">Front-end/UI Developer</span> xuất sắc, làm chủ các công nghệ hiện đại và sáng tạo giao diện web ấn tượng.<br><br>
+          <strong><ion-icon name="bulb-outline" style="font-size:1.1em;vertical-align:-2px;"></ion-icon> Giá trị:</strong> Không ngừng học hỏi, phát triển kỹ năng <span style="color:#f87171;font-weight:600;">thiết kế</span> & <span style="color:#fbbf24;font-weight:600;">lập trình</span>, tạo ra sản phẩm <span style="color:#10b981;font-weight:600;">thân thiện</span> và <span style="color:#6366f1;font-weight:600;">truyền cảm hứng</span> cho người dùng.<br><br>
+          <strong><ion-icon name="flag-outline" style="font-size:1.1em;vertical-align:-2px;"></ion-icon> Mục tiêu dài hạn:</strong> Đóng góp tích cực cho cộng đồng công nghệ, trở thành chuyên gia có tầm ảnh hưởng ít nhất là đối với gia đình.
+        </p>
+      </div>
+    </div>
+    <!-- Khung tiêu đề SỞ THÍCH -->
+    <div class="cv-section hobby-title-section" id="services">
+      <div class="cv-section-header">
+        <ion-icon name="heart-outline"></ion-icon>
+        <h3>SỞ THÍCH</h3>
+      </div>
+    </div>
+    <div class="hobbies-row-separated">
+      <div class="hobby-box-separated">
+        <span class="hobby-icon hobby-music hobby-icon-glow"><ion-icon name="musical-notes-outline"></ion-icon></span>
+        <div class="hobby-title">Âm nhạc</div>
+      </div>
+      <div class="hobby-box-separated">
+        <span class="hobby-icon hobby-book hobby-icon-glow"><ion-icon name="book-outline"></ion-icon></span>
+        <div class="hobby-title">Đọc sách</div>
+      </div>
+      <div class="hobby-box-separated">
+        <span class="hobby-icon hobby-travel hobby-icon-glow"><ion-icon name="globe-outline"></ion-icon></span>
+        <div class="hobby-title">Du lịch</div>
+      </div>
+      <div class="hobby-box-separated">
+        <span class="hobby-icon hobby-art hobby-icon-glow"><ion-icon name="color-palette-outline"></ion-icon></span>
+        <div class="hobby-title">Vẽ</div>
+      </div>
+      <div class="hobby-box-separated">
+        <span class="hobby-icon hobby-design hobby-icon-glow"><ion-icon name="build-outline"></ion-icon></span>
+        <div class="hobby-title">Thiết kế</div>
+      </div>
+    </div>
 
 
     <!-- Projects -->
