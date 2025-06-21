@@ -858,3 +858,90 @@ main {
     font-size: 1.2rem;
   }
 }
+
+/* --- Project Cards Effects --- */
+.project-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border: 1px solid transparent;
+  background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.04) 100%) !important;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.2), 0 4px 16px rgba(59, 130, 246, 0.15) !important;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  background: linear-gradient(135deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.06) 100%) !important;
+}
+
+.project-card .project-icon {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .project-icon {
+  opacity: 0.8 !important;
+  transform: scale(1.1) rotate(5deg);
+  color: #3b82f6;
+}
+
+.project-card strong {
+  transition: color 0.3s ease;
+}
+
+.project-card:hover strong {
+  color: #3b82f6;
+}
+
+.project-card .date {
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .date {
+  color: #f87171;
+}
+
+/* Project card entrance animation */
+.project-card {
+  animation: projectCardEntrance 0.6s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.project-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.project-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.project-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes projectCardEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsive adjustments for project cards */
+@media (max-width: 900px) {
+  .project-card:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    margin-bottom: 16px;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-2px);
+  }
+}

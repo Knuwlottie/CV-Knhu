@@ -205,3 +205,32 @@ const skillObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 skillBars.forEach(bar => skillObserver.observe(bar));
+
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contact-form');
+  const successMsg = document.getElementById('form-success');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          successMsg.style.display = 'block';
+          form.reset();
+        } else {
+          response.json().then(data => {
+            alert(data.errors ? data.errors.map(e => e.message).join(', ') : 'Có lỗi xảy ra!');
+          });
+        }
+      }).catch(() => {
+        alert('Có lỗi xảy ra!');
+      });
+    });
+  }
+});
